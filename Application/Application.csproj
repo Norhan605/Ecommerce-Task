@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Products\Commands\AddProduct\" />
+    <Folder Include="Features\Products\Commands\DeleteProduct\" />
+    <Folder Include="Features\Products\Commands\UpdateProduct\" />
+    <Folder Include="Features\Products\Queries\GetProductDetails\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Dtos\Dtos.csproj" />
+  </ItemGroup>
+
+</Project>
